@@ -1,0 +1,149 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+.container-main {
+    display: grid;
+    width: 100%;
+    min-height: 100vh ;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 390px;
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0 14px 28px rgb(0 0 0 / 25%), 0 10px 10px rgb(0 0 0 / 22%);
+    margin-top: auto;
+}
+
+.hero-image{
+    position:sticky; 
+    height: inherit;
+    padding: 0 0 5px;
+}
+
+.d-order{
+    font-size: 31px;
+    color: rgb(12, 7, 1);
+    font-weight: bold;
+}
+
+p {
+    margin-left: 75px;
+    margin-right: 72px;
+	font-size: 14px;
+	font-weight: 100;
+	line-height: 20px;
+	letter-spacing: 0.5px;   
+    color: #847979;  
+}
+
+span {
+	font-size: 12px;
+}
+
+.annual-style{
+    width: 110px;
+    margin: 10px ;
+    float: left;  
+    font-weight: bold; 
+    font-size: 18px; 
+}
+
+.money {
+    margin-right: 38px;  
+    color:rgb(135, 134, 219);
+   
+}
+
+.text {
+    display: flex;
+    width: 90%;
+    height: 70px;
+    margin: 20px;
+    justify-content: center; 
+    align-items:center; 
+    background-color: rgb(210, 220, 233);
+    border-radius: 10px;
+}
+
+.button-Proceed {
+    width: 90%;
+    height: 50px;
+    font-family: Poppins-Medium;
+    background-color: rgb(30, 45, 179);
+    font-size: 15px;
+    color: rgb(253, 253, 253);
+    line-height: 1.2;
+    text-transform: uppercase;
+    border-radius: 10px;
+    box-shadow: 0 14px 28px rgb(0 0 0 / 25%), 0 10px 10px rgb(0 0 0 / 22%);
+}
+
+.button-Proceed:hover{
+    background-color: rgb(97, 121, 231);
+}
+
+.change{
+    margin-left: 68px;  
+    padding: 20px;
+    text-align: right!important;
+    text-decoration:underline;
+    float:right;
+    font-weight: bold;
+    color: rgb(40, 25, 180);
+    float:right;
+    font-weight: bold;
+    color: rgb(40, 25, 180);
+}
+
+.change:hover {
+    text-decoration:none;
+}
+
+.Cancel{
+    height: 10px;
+    padding: 26px;
+    color: rgb(135, 134, 219);
+    border: hidden;
+    background: scroll;
+}
+
+.Cancel:hover{
+    color: rgb(22, 22, 80);
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%); 
+}
+
+@media only screen and (max-width: 375px) { 
+/* for mobile */
+.container-main {
+    background-image: url(../images/pattern-background-mobile.svg);
+    background-repeat: no-repeat;
+    background-color: #f2f2f2;
+    font-size: 16px;
+}
+}
+
+@media only screen and (max-width: 1440px) {
+/* for disktop */
+.container-main {
+    background-image: url(../images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-color: #f2f2f2;
+    font-size: 16px;
+}
+}
