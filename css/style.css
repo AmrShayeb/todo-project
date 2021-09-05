@@ -19,9 +19,11 @@ body{
     text-align: center;
 }
 
-.img-moon{
+a{
+    src:url(../images/icon-moon.svg);
     float: right;
     margin: 11px;
+    
 }
 
 .head-todo{
@@ -34,14 +36,29 @@ body{
 color: rgb(243, 241, 240);
 }
 
+
+.list{
+    display: block;
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    text-align: center;
+    border: none;
+    border-radius: 4px;
+    text-shadow: 4 -1 black;
+    box-shadow: paleturquoise;
+    box-shadow: 0 14px 28px rgb(0 0 0 / 8%), 0 10px 10px rgb(0 0 0 / 8%);
+  }
+
 input[type=text], select {
     width: 100%;
     padding: 12px 20px;
-    margin: 8px 0;
+    margin: 8x 0;
     display: inline-block;
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
+    
   }
   
   input[type=submit] {
@@ -60,18 +77,8 @@ input[type=text], select {
     background-color: #45a049;
   }
   
-.list{
-    display: block;
-    height: 100%;
-    width: 100%;
-    background-color: white;
-    text-align: center;
-    border: none;
-    border-radius: 4px;
-    text-shadow: 4 -1 black;
-    box-shadow: paleturquoise;
-    box-shadow: 0 14px 28px rgb(0 0 0 / 8%), 0 10px 10px rgb(0 0 0 / 8%);
-  }
+
+ /* @import "../reading-list.scss";*/
   
 .puteem-element{
     display: -webkit-inline-box;
