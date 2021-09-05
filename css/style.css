@@ -93,7 +93,7 @@ input[type=text], select {
 @media only screen and (max-width: 375px) { 
 /* for mobile */
 .container-main {
-    background-image: url(./images/bg-mobile-light.jpg);
+    background-image: url(../images/bg-mobile-light.jpg);
     background-repeat: no-repeat;
     font-size: 16px;
 }
@@ -102,7 +102,7 @@ input[type=text], select {
 @media only screen and (max-width: 1440px) {
 /* for disktop */
 .container-main {
-    background-image: url(./images/bg-desktop-light.jpg);
+    background-image: url(../images/bg-desktop-light.jpg);
     background-repeat: no-repeat;
     font-size: 16px;
 }
