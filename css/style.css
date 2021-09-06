@@ -17,17 +17,24 @@ body{
     width: 390px;
     border-radius: 10px;
     text-align: center;
-}
-
-a{
-    src:url(../images/icon-moon.svg);
-    float: right;
-    margin: 11px;
+    padding: 66px;
     
 }
 
+.mode{
+    float: right;
+    margin: 11px;
+    width: 28px;
+    height: 36px;
+    background-image: url(../images/icon-moon.svg);
+    background-size: 27px;
+    background-repeat: no-repeat;
+    border: none;
+    background-color: unset;
+}
+
 .head-todo{
-    color: #dfe5e6;
+    color: #f1f2f2;
     text-align: -webkit-left;
     letter-spacing: 16px;
     font-family: system-ui;
@@ -37,7 +44,7 @@ color: rgb(243, 241, 240);
 }
 
 
-.list{
+/*.list{
     display: block;
     height: 100%;
     width: 100%;
@@ -49,41 +56,36 @@ color: rgb(243, 241, 240);
     box-shadow: paleturquoise;
     box-shadow: 0 14px 28px rgb(0 0 0 / 8%), 0 10px 10px rgb(0 0 0 / 8%);
   }
-
+*/
 input[type=text], select {
     width: 100%;
     padding: 12px 20px;
     margin: 8x 0;
     display: inline-block;
-    border: 1px solid #ccc;
+    border: 1px solid;
     border-radius: 4px;
     box-sizing: border-box;
     
   }
   
-  input[type=submit] {
-    width: 100%;
-    background-color: #4CAF50;
-    color: white;
-    padding: 14px 20px;
-    margin: 8px 0;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-
-  }
   
-  input[type=submit]:hover {
-    background-color: #45a049;
-  }
   
 
- /* @import "../reading-list.scss";*/
+ /*@import "../reading-list.scss";*/
   
 .puteem-element{
     display: -webkit-inline-box;
     position: relative;
     bottom: -107px;}
+
+.items{
+color: rgb(215, 219, 221);
+float: left;
+}
+
+.all{
+color: rgb(47, 47, 180);
+}
 .drag{
     text-align: center;
     color: #c4c1c1;

@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" href="../todo-app-main/css/style.css">
+  <link id="stylesheet" rel="stylesheet" href="../todo-app-main/css/style.css">
   <title>Frontend Mentor | Todo app</title>
   <style>
   </style>
@@ -14,12 +14,13 @@
   <div  class="container-main">
     <div class="container">
       <div>
-        <a href="../todo-app-main/darkstyle.scss"></a>
+       <button class="mode" onclick="swapStyle"("dark-style.scss")></button>
         <h1 class="head-todo">TODO</h1>
       </div>
       <div class="new-todo">
-        <form action="/action_page.php">
+        <form>
           <input type="text" id="fname" name="new todo" placeholder="creat a new todo">
+          </form>
     </div>
     <div class="list">
       <div class="puteem-element">
@@ -35,8 +36,15 @@
 
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Amr Shayeb</a>.
+    Coded by <a href="#">Amr Shayeb</a>
+  </div>.
   </div>
 </div>
+
+<script>
+  function swapStyle(sheet) {
+    document.getElementById("stylesheet").href = sheet;
+  }
+  </script>
 </body>
 </html>
