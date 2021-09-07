@@ -1,3 +1,4 @@
+
 body{
     margin: 0px;
     padding: 0px;
@@ -17,11 +18,12 @@ body{
     width: 390px;
     border-radius: 10px;
     text-align: center;
-    padding: 66px;
+    padding: 124px;
     
 }
 
-.mode{
+
+#dark-mode-toggle{
     float: right;
     margin: 11px;
     width: 28px;
@@ -40,44 +42,44 @@ body{
     font-family: system-ui;
 }
 .new-todo{
-color: rgb(243, 241, 240);
-}
-
-
-/*.list{
-    display: block;
-    height: 100%;
+    color: rgb(33 33 132);
     width: 100%;
-    background-color: white;
-    text-align: center;
-    border: none;
+    padding: 13px 0px;
+    margin: 8x 0;
+    border: 1px solid;
     border-radius: 4px;
-    text-shadow: 4 -1 black;
-    box-shadow: paleturquoise;
-    box-shadow: 0 14px 28px rgb(0 0 0 / 8%), 0 10px 10px rgb(0 0 0 / 8%);
-  }
-*/
-input[type=text], select {
+    box-sizing: border-box;
+    background-color: white;
+}
+#input{
+    width: 89%;
+    height: 100%;
+    border: none;
+}
+#list{
     width: 100%;
-    padding: 12px 20px;
+    padding: 107px 0px;
     margin: 8x 0;
     display: inline-block;
     border: 1px solid;
     border-radius: 4px;
     box-sizing: border-box;
-    
-  }
-  
-  
-  
-
- /*@import "../reading-list.scss";*/
-  
+    border-color: lightslategrey;
+    background-color: white;
+}
 .puteem-element{
-    display: -webkit-inline-box;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    padding: 11px 0px;
+    margin: 8x 0;
+    border: 1px solid;
+    border-radius: 4px;
+    border-color: lightslategrey;
+    font-size: 12px;
     position: relative;
-    bottom: -107px;}
-
+    bottom: -108px;
+}
 .items{
 color: rgb(215, 219, 221);
 float: left;
@@ -86,6 +88,18 @@ float: left;
 .all{
 color: rgb(47, 47, 180);
 }
+
+.Active{
+    color: rgb(175, 175, 194);
+}
+.completed{
+    color: rgb(175, 175, 194);
+}
+.clear{
+    color: rgb(175, 175, 194);
+}
+
+
 .drag{
     text-align: center;
     color: #c4c1c1;
