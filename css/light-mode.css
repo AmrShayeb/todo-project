@@ -2,8 +2,8 @@
 body{
     margin: 0px;
     padding: 0px;
-}
 
+}
 .container-main {
     display: grid;
     width: 100%;
@@ -12,6 +12,7 @@ body{
     justify-content: center;
     align-items: center;
     background-color: #efe5e5;
+
 }
 .container {
     width: 390px;
@@ -19,9 +20,8 @@ body{
     border-radius: 10px;
     text-align: center;
     padding: 124px;
+
 }
-
-
 #dark-mode-toggle{
     float: right;
     margin: 11px;
@@ -32,15 +32,16 @@ body{
     background-repeat: no-repeat;
     border: none;
     background-color: unset;
-}
 
+}
 .head-todo{
     color: #f1f2f2;
     text-align: -webkit-left;
     letter-spacing: 16px;
     font-family: system-ui;
+
 }
- .putton-element{
+.putton-element{
     display: flex;
     justify-content: space-around;
     width: 100%;
@@ -51,57 +52,60 @@ body{
     font-size: 12px;
     position: relative;
     bottom: -311px;
+
 } 
 .num-items{
 color: rgb(175, 175, 194);
 font-weight: bold;
-} 
 
+} 
 .all{
 color: rgb(8, 8, 209);
 font-weight: bold;
-}
 
+}
 .Active{
     color: rgb(175, 175, 194);
     font-weight: bold;
+
 }
 .Active:hover{
     color: rgb(26, 24, 24);
     font-weight: bold;
-}
 
+}
 .completed{
     color: rgb(175, 175, 194);
     font-weight: bold;
+
 }
 .clear{
     color: rgb(175, 175, 194);
     font-weight: bold;
+
 }
 .clear:hover{
     color: rgb(90, 86, 86);
     font-weight: bold;
-}
 
+}
 .drag{
     text-align: center;
     color: #a09797;
     margin: 39px;
     font-size: 12px;
     padding: 12px;
+
 }
 .attribution {
     font-size: 11px;
     text-align: center;
-}
 
+}
 .attribution a {
     color: hsl(228, 45%, 44%); 
+
 }
-
-
-/* /\.............. */
 .content{
     width: 382px;
     height: 350px;
@@ -109,11 +113,12 @@ font-weight: bold;
     background-color: #FFF;
     overflow: auto;
     border-radius: 3px;
-}
 
+}
 .content ul{
     padding:0;
     margin:0;
+
 }
 .item{
     width:380px;
@@ -124,6 +129,7 @@ font-weight: bold;
     list-style: none;
     padding: 0;
     margin: 0;
+
 }
 .item i.co{
     position: absolute;
@@ -131,12 +137,15 @@ font-weight: bold;
     padding-left:5px;
     left:10px;
     top:10px;
+
 }
 .item i.co:hover{
     cursor: pointer;
+
 }
 .fa-check-circle{
     color: #85538a;
+
 }
 .item p.text{
     position: absolute;
@@ -147,20 +156,24 @@ font-weight: bold;
     top: 5px;
     background-color: #FFF;
     max-width: 285px;
+
 }
 .lineThrough{
     text-decoration: line-through;
     color : #ccc;
+
 }
 .item i.de{
     position: absolute;
     font-size: 21px;
     right:15px;
     top:10px;
+
 }
 .item i.de:hover{
     color:#af0000;
     cursor: pointer;
+
 }
 /* ------------ add item ------------ */
 .add-to-do{
@@ -170,52 +183,55 @@ font-weight: bold;
     padding: 9px;
     background-color: white;
     margin-bottom: 19px;
+
 }
 .add-to-do i{
     position: absolute;
     font-size: 26px;
     color: #85538a;
     right: 385px;
-}
 
+}
 .add-to-do input {
     position:relative;
     width: 310px;
     border: none;
     padding: 5px;
     left: 5px;
+
 }
 .add-to-do input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
     color: #6a708a;
     font-family: 'Titillium Web', sans-serif;
     font-size: 15px;
     padding: 5px;
+
 }
 .add-to-do input::-moz-placeholder { /* Firefox 19+ */
     color: #4162f6;
     font-family: 'Titillium Web', sans-serif;
     font-size: 20px;
+
 }
 .add-to-do input:-ms-input-placeholder { /* IE 10+ */
     color: #4162f6;
     font-family: 'Titillium Web', sans-serif;
     font-size: 20px;
+
 }
 .add-to-do input:-moz-placeholder { /* Firefox 18- */
     color: #4162f6;
     font-family: 'Titillium Web', sans-serif;
     font-size: 20px;
+
 }
-
-
-
-
 @media only screen and (max-width: 375px) { 
 /* for mobile */
 .container-main {
     background-image: url(../images/bg-mobile-light.jpg);
     background-repeat: no-repeat;
     font-size: 16px;
+
 }
 }
 
@@ -225,5 +241,6 @@ font-weight: bold;
     background-image: url(../images/bg-desktop-light.jpg);
     background-repeat: no-repeat;
     font-size: 16px;
+    
 }
 }
