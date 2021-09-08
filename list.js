@@ -1,5 +1,6 @@
 
 // Select the Elements
+
 const list = document.getElementById("list");
 const input = document.getElementById("input");
 
@@ -30,9 +31,9 @@ clear.addEventListener("click", function(){
 // add to do function
 
 function addToDo(toDo, id, done, trash){
-    
+
     if(trash){ return; }
-    
+
     const DONE = done ? CHECK : UNCHECK;
     const LINE = done ? LINE_THROUGH : "";
     
@@ -42,9 +43,9 @@ function addToDo(toDo, id, done, trash){
                     <i class="fa fa-trash-o de" job="delete" id="${id}"></i>
                   </li>
                 `;
-    
+
     const position = "beforeend";
-    
+
     list.insertAdjacentHTML(position, item);
 }
 
@@ -75,6 +76,7 @@ document.addEventListener("keyup",function(even){
 
 
 // complete to do
+
 function completeToDo(element){
     element.classList.toggle(CHECK);
     element.classList.toggle(UNCHECK);
@@ -101,7 +103,7 @@ list.addEventListener("click", function(event){
     }else if(elementJob == "delete"){
         removeToDo(element);
     }
-    
+
     // add item to localstorage ( this code must be added where the LIST array is updated)
     localStorage.setItem("TODO", JSON.stringify(LIST));
 });
