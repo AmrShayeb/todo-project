@@ -11,22 +11,20 @@ body{
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    background-color: #2d2c33;
+    background-color: #161722;
 }
+
 .container {
     width: 390px;
     max-width: 390px;
-    border-radius: 10px;
     text-align: center;
-    padding: 124px;
 }
 
-
 #dark-mode-toggle{
-    float: right;
-    margin: 11px;
     width: 28px;
     height: 36px;
+    margin: 11px;
+    float: right;
     background-image: url(../images/icon-sun.svg);
     background-size: 27px;
     background-repeat: no-repeat;
@@ -40,21 +38,23 @@ body{
     letter-spacing: 16px;
     font-family: system-ui;
 }
+
  .putton-element{
+    position: relative;
     display: flex;
-    justify-content: space-around;
     width: 100%;
     padding: 11px 0px;
-    margin: 8x 0;
+    justify-content: space-around;
     border-top: 1px solid rgba(0,0,0,0.1);
     border-color: lightslategrey;
     font-size: 12px;
-    position: relative;
-    bottom: -311px;
+    
 } 
+
 .num-items{
 color: rgb(175, 175, 194);
 font-weight: bold;
+
 } 
 
 .all{
@@ -66,6 +66,7 @@ font-weight: bold;
     color: rgb(175, 175, 194);
     font-weight: bold;
 }
+
 .Active:hover{
     color: rgb(26, 24, 24);
     font-weight: bold;
@@ -75,22 +76,26 @@ font-weight: bold;
     color: rgb(175, 175, 194);
     font-weight: bold;
 }
+
 .clear{
     color: rgb(175, 175, 194);
     font-weight: bold;
 }
+
 .clear:hover{
     color: rgb(90, 86, 86);
     font-weight: bold;
 }
 
 .drag{
+    margin: 39px;
+    padding: 12px;
     text-align: center;
     color: #a09797;
-    margin: 39px;
     font-size: 12px;
-    padding: 12px;
+    
 }
+
 .attribution {
     font-size: 11px;
     text-align: center;
@@ -100,84 +105,99 @@ font-weight: bold;
     color: hsl(228, 45%, 44%); 
 }
 
-
-/* /\.............. */
 .content{
     width: 382px;
-    height: 350px;
     max-height: 350px;
-    background-color: #363142;
+    background-color: 	#25273c;
     overflow: auto;
     border-radius: 3px;
 }
 
 .content ul{
-    padding:0;
     margin:0;
+    padding:0;
+    
 }
+
 .item{
+    position: relative;
     width:380px;
     height: 45px;
+    margin: 0;
+    padding: 0;
     min-height: 45px;
-    position: relative;
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
     list-style: none;
-    padding: 0;
-    margin: 0;
+    
+   
 }
+
 .item i.co{
     position: absolute;
-    font-size: 25px;
     padding-left:5px;
+    font-size: 25px;
     left:10px;
     top:10px;
+    color: #777a92;;
 }
+
 .item i.co:hover{
     cursor: pointer;
 }
+
 .fa-check-circle{
     color: #b563c0;
 }
+
 .item p.text{
-    color: rgb(255, 255, 255);
     position: absolute;
-    padding: 9px;
+    max-width: 285px;
     margin: 0;
+    padding: 9px;
+    color: #cacde8;
     font-size: 15px;
     left: 50px;
     top: 5px;
-    background-color: #363142;
-    max-width: 285px;
+    background-color:#25273c;
+   
 }
+
 .lineThrough{
     text-decoration: line-through;
-    color : #363142;;
+    color : #f1e4ee;
 }
+
+
 .item i.de{
     position: absolute;
     font-size: 21px;
     right:15px;
     top:10px;
+    color: #777a92;
 }
+
 .item i.de:hover{
     color:#af0000;
     cursor: pointer;
 }
-/* ------------ add item ------------ */
+
 .add-to-do{
     width: 363px;
+    margin-bottom: 19px;
+    padding: 9px;
     border-radius: 3px;
     text-align: center;
-    padding: 9px;
-    background-color: #363142;
-    margin-bottom: 19px;
+    background-color: #25273c;
+   
 }
-.add-to-do i{
-    position: absolute;
+
+.add-to-do i {
+    position: relative;
     font-size: 26px;
     color: #85538a;
-    right: 385px;
+    
 }
+
 
 .add-to-do input {
     position:relative;
@@ -185,34 +205,37 @@ font-weight: bold;
     border: none;
     padding: 5px;
     left: 5px;
-    background-color:  #363142;;
+    background-color:  	#25273c;
+    color: #cacde8;
 }
+
 .add-to-do input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-    color: #878da7;
+    padding: 5px;
+    color: #cacde8;
     font-family: 'Titillium Web', sans-serif;
     font-size: 15px;
-    padding: 5px;
+    
 }
+
 .add-to-do input::-moz-placeholder { /* Firefox 19+ */
     color: #4162f6;
     font-family: 'Titillium Web', sans-serif;
     font-size: 20px;
 }
+
 .add-to-do input:-ms-input-placeholder { /* IE 10+ */
     color: #4162f6;
     font-family: 'Titillium Web', sans-serif;
     font-size: 20px;
 }
+
 .add-to-do input:-moz-placeholder { /* Firefox 18- */
     color: #4162f6;
     font-family: 'Titillium Web', sans-serif;
     font-size: 20px;
 }
 
-
-
-
-@media only screen and (max-width: 375px) { 
+@media only screen and (min-width: 375px) { 
 /* for mobile */
 .container-main {
     background-image: url(../images/bg-mobile-dark.jpg);

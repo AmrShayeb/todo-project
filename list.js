@@ -43,7 +43,7 @@ function addToDo(toDo, id, done, trash){
                     <i class="fa fa-trash-o de" job="delete" id="${id}"></i>
                   </li>
                 `;
-    const position = "beforeend";
+    const position = "afterbegin";
     list.insertAdjacentHTML(position, item);
 }
 // add an item to the list user the enter key

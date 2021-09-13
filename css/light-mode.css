@@ -2,8 +2,8 @@
 body{
     margin: 0px;
     padding: 0px;
-
 }
+
 .container-main {
     display: grid;
     width: 100%;
@@ -11,91 +11,86 @@ body{
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    background-color: #efe5e5;
-
+    background-color: #e4e5f1;
 }
+
 .container {
     width: 390px;
     max-width: 390px;
-    border-radius: 10px;
     text-align: center;
-    padding: 124px;
-
 }
+
 #dark-mode-toggle{
-    float: right;
-    margin: 11px;
     width: 28px;
     height: 36px;
+    margin: 11px;
+    float: right;
     background-image: url(../images/icon-moon.svg);
     background-size: 27px;
     background-repeat: no-repeat;
     border: none;
     background-color: unset;
-
 }
+
 .head-todo{
     color: #f1f2f2;
     text-align: -webkit-left;
     letter-spacing: 16px;
     font-family: system-ui;
-
 }
+
 .putton-element{
+    position: relative;
     display: flex;
     justify-content: space-around;
     width: 100%;
     padding: 11px 0px;
-    margin: 8x 0;
     border-top: 1px solid rgba(0,0,0,0.1);
     border-color: lightslategrey;
     font-size: 12px;
-    position: relative;
-    bottom: -311px;
-
 } 
+
 .num-items{
 color: rgb(175, 175, 194);
 font-weight: bold;
-
 } 
+
 .all{
 color: rgb(8, 8, 209);
 font-weight: bold;
-
 }
 .Active{
     color: rgb(175, 175, 194);
     font-weight: bold;
-
 }
+
 .Active:hover{
     color: rgb(26, 24, 24);
     font-weight: bold;
-
 }
+
 .completed{
     color: rgb(175, 175, 194);
     font-weight: bold;
-
 }
+
 .clear{
     color: rgb(175, 175, 194);
     font-weight: bold;
-
 }
+
 .clear:hover{
     color: rgb(90, 86, 86);
     font-weight: bold;
-
 }
+
 .drag{
     text-align: center;
-    color: #a09797;
     margin: 39px;
-    font-size: 12px;
     padding: 12px;
-
+    color: #a09797;
+    font-size: 12px;
+    
 }
 .attribution {
     font-size: 11px;
@@ -103,136 +98,143 @@ font-weight: bold;
 
 }
 .attribution a {
-    color: hsl(228, 45%, 44%); 
+    color: hsl(228, 45%, 44%);
 
 }
+
 .content{
     width: 382px;
-    height: 350px;
     max-height: 350px;
-    background-color: #FFF;
+    background-color: #fafafa;
     overflow: auto;
     border-radius: 3px;
-
 }
+
 .content ul{
-    padding:0;
     margin:0;
-
+    padding:0;
+    
 }
+
 .item{
+    position: relative;
     width:380px;
     height: 45px;
+    margin: 0;
+    padding: 0;
     min-height: 45px;
-    position: relative;
     border-bottom: 1px solid rgba(0,0,0,0.1);
     list-style: none;
-    padding: 0;
-    margin: 0;
 
 }
+
 .item i.co{
     position: absolute;
-    font-size: 25px;
     padding-left:5px;
+    font-size: 25px;
     left:10px;
     top:10px;
-
 }
+
 .item i.co:hover{
     cursor: pointer;
 
 }
+
 .fa-check-circle{
     color: #85538a;
-
 }
 .item p.text{
     position: absolute;
-    padding: 9px;
+    max-width: 285px;
     margin: 0;
+    padding: 9px;
     font-size: 15px;
     left: 50px;
     top: 5px;
-    background-color: #FFF;
-    max-width: 285px;
-
+    background-color: #fafafa;
+    color: #393a4c;
 }
+
 .lineThrough{
     text-decoration: line-through;
     color : #ccc;
-
 }
+
 .item i.de{
     position: absolute;
     font-size: 21px;
     right:15px;
     top:10px;
-
 }
+
 .item i.de:hover{
     color:#af0000;
     cursor: pointer;
-
 }
+
 /* ------------ add item ------------ */
 .add-to-do{
+    position: relative;
     width: 363px;
+    margin-bottom: 19px;
+    padding: 9px;
     border-radius: 3px;
     text-align: center;
-    padding: 9px;
     background-color: white;
-    margin-bottom: 19px;
-
+    
 }
+
 .add-to-do i{
-    position: absolute;
+    position: relative;
     font-size: 26px;
-    color: #85538a;
-    right: 385px;
-
+    color: #85538a;;
+    
 }
+
 .add-to-do input {
-    position:relative;
-    width: 310px;
-    border: none;
+    position: relative;
+    width: 308px;
     padding: 5px;
-    left: 5px;
-
+    border: none;
+    
 }
+
 .add-to-do input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    padding: 5px;
     color: #6a708a;
     font-family: 'Titillium Web', sans-serif;
     font-size: 15px;
-    padding: 5px;
-
+   
 }
+
 .add-to-do input::-moz-placeholder { /* Firefox 19+ */
     color: #4162f6;
     font-family: 'Titillium Web', sans-serif;
     font-size: 20px;
-
 }
+
 .add-to-do input:-ms-input-placeholder { /* IE 10+ */
     color: #4162f6;
     font-family: 'Titillium Web', sans-serif;
     font-size: 20px;
 
 }
+
 .add-to-do input:-moz-placeholder { /* Firefox 18- */
     color: #4162f6;
     font-family: 'Titillium Web', sans-serif;
     font-size: 20px;
-
 }
-@media only screen and (max-width: 375px) { 
+
+@media only screen and (min-width: 375pxm) { 
 /* for mobile */
 .container-main {
     background-image: url(../images/bg-mobile-light.jpg);
     background-repeat: no-repeat;
     font-size: 16px;
-
 }
+
 }
 
 @media only screen and (max-width: 1440px) {
@@ -241,6 +243,5 @@ font-weight: bold;
     background-image: url(../images/bg-desktop-light.jpg);
     background-repeat: no-repeat;
     font-size: 16px;
-    
 }
 }
