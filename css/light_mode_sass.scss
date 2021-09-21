@@ -1,0 +1,267 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+.container-main {
+    display: grid;
+    width: 100%;
+    min-height: 100vh ;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #e4e5f1;
+    font-size: 16px;
+}
+
+.container-main__image {
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    height: 34%;
+    background-image: url(../images/bg-mobile-light.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.container-main__container {
+    position: relative;
+    display: table;
+    width: 223px;
+    height: 553px;
+    max-width: 329px;
+    text-align: center;
+}
+
+.container__head{
+    position: relative;
+    width: 327px;
+}
+
+#dark-mode-toggle{
+    width: 28px;
+    height: 36px;
+    margin: 7px;
+    float: right;
+    background-image: url(../images/icon-moon.svg);
+    background-size: 27px;
+    background-repeat: no-repeat;
+    border: none;
+    background-color: unset;
+}
+
+.container__head-todo{
+    color: #f1f2f2;
+    text-align: -webkit-left;
+    letter-spacing: 16px;
+    font-family: system-ui;
+}
+
+.container__add-to-do{
+    position: relative;
+    width: 301px;
+    margin-bottom: 19px;
+    padding: 9px;
+    border-radius: 3px;
+    text-align: center;
+    background-color: white;
+}
+
+.container__add-to-do i{
+    position: relative;
+    font-size: 26px;
+    color: #85538a;;
+}
+
+.container__add-to-do input {
+    position: relative;
+    width: 264px;
+    padding: 5px;
+    border: none;
+}
+
+.container__add-to-do input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    padding: 5px;
+    color: #6a708a;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 15px;
+}
+
+.container__add-to-do input::-moz-placeholder { /* Firefox 19+ */
+    color: #4162f6;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 20px;
+}
+
+.container__add-to-do input:-ms-input-placeholder { /* IE 10+ */
+    color: #4162f6;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 20px;
+}
+
+.container__add-to-do input:-moz-placeholder { /* Firefox 18- */
+    color: #4162f6;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 20px;
+}
+
+.item{
+    position: relative;
+    width: 329px;
+    height: 45px;
+    margin: 0;
+    padding: 0;
+    min-height: 45px;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    list-style: none;
+}
+
+.item i.co{
+    position: absolute;
+    padding-left:5px;
+    font-size: 25px;
+    left:10px;
+    top:10px;
+}
+
+.item i.co:hover{
+    cursor: pointer;
+}
+
+.fa-check-circle{
+    color: #85538a;
+}
+
+.item p.text{
+    position: absolute;
+    max-width: 285px;
+    margin: 0;
+    padding: 9px;
+    font-size: 15px;
+    left: 50px;
+    top: 5px;
+    background-color: #fafafa;
+    color: #393a4c;
+}
+
+.lineThrough{
+    text-decoration: line-through;
+    color : #ccc;
+}
+
+.item i.de{
+    position: absolute;
+    font-size: 21px;
+    right:15px;
+    top:10px;
+}
+
+.item i.de:hover{
+    color:#af0000;
+    cursor: pointer;
+}
+
+.container__content{
+    width: 321px;
+    max-height: 375px;
+    background-color: #fafafa;
+    overflow: auto;
+    border-radius: 3px;
+}
+
+.container__content ul{
+    margin:0;
+    padding:0;
+}
+
+.list__putton-element{
+    position: relative;
+    display: flex;
+    padding: 11px 0px;
+    justify-content: space-around;
+    border-top: 1px solid rgba(0,0,0,0.1);
+    border-color: lightslategrey;
+    font-size: 12px;
+}
+
+.list__num-items{
+color: rgb(175, 175, 194);
+font-weight: bold;
+} 
+
+.list__all{
+color: rgb(8, 8, 209);
+font-weight: bold;
+}
+
+.list__Active{
+    color: rgb(175, 175, 194);
+    font-weight: bold;
+}
+
+.list__Active:hover{
+    color: rgb(26, 24, 24);
+    font-weight: bold;
+}
+
+.list__completed{
+    color: rgb(175, 175, 194);
+    font-weight: bold;
+}
+
+.list__clear{
+    color: rgb(175, 175, 194);
+    font-weight: bold;
+}
+
+.list__clear:hover{
+    color: rgb(90, 86, 86);
+    font-weight: bold;
+}
+
+.container-main__drag{
+    text-align: center;
+    margin: 39px;
+    padding: 12px;
+    color: #a09797;
+    font-size: 12px;
+}
+
+.container-main__attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.container-main__attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media only screen and (min-width: 800px) {
+/* for disktop */
+.image {
+    background-image: url(../images/bg-desktop-light.jpg);
+}
+
+.container {
+    width: 300px;
+}
+
+.head{
+    width: 380px;
+}
+.add-to-do{
+    width: 354px;
+}
+
+.add-to-do input {
+    width: 300px;
+}
+
+.item{
+    width: 380px;
+}
+.content{
+    width: 372px;
+}
+}
