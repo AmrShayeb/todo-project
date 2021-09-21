@@ -1,0 +1,234 @@
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+.container-main {
+  display: -ms-grid;
+  display: grid;
+  width: 100%;
+  min-height: 100vh;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #e4e5f1;
+}
+
+.container-main_container {
+  width: 390px;
+  max-width: 390px;
+  text-align: center;
+}
+
+#container_dark-mode-toggle {
+  width: 28px;
+  height: 36px;
+  margin: 11px;
+  float: right;
+  background-image: url(../images/icon-moon.svg);
+  background-size: 27px;
+  background-repeat: no-repeat;
+  border: none;
+  background-color: unset;
+}
+
+.container_head-todo {
+  color: #f1f2f2;
+  text-align: -webkit-left;
+  letter-spacing: 16px;
+  font-family: system-ui;
+}
+
+.putton-element {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 100%;
+  padding: 11px 0px;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-color: lightslategrey;
+  font-size: 12px;
+}
+
+.num-items {
+  color: #afafc2;
+  font-weight: bold;
+}
+
+.all {
+  color: #0808d1;
+  font-weight: bold;
+}
+
+.Active {
+  color: #afafc2;
+  font-weight: bold;
+}
+
+.Active:hover {
+  color: #1a1818;
+  font-weight: bold;
+}
+
+.completed {
+  color: #afafc2;
+  font-weight: bold;
+}
+
+.clear {
+  color: #afafc2;
+  font-weight: bold;
+}
+
+.clear:hover {
+  color: #5a5656;
+  font-weight: bold;
+}
+
+.drag {
+  text-align: center;
+  margin: 39px;
+  padding: 12px;
+  color: #a09797;
+  font-size: 12px;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: #3e52a3;
+}
+
+.container_content {
+  width: 382px;
+  max-height: 350px;
+  background-color: #fafafa;
+  overflow: auto;
+  border-radius: 3px;
+}
+
+.container_content ul {
+  margin: 0;
+  padding: 0;
+}
+
+.item {
+  position: relative;
+  width: 380px;
+  height: 45px;
+  margin: 0;
+  padding: 0;
+  min-height: 45px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  list-style: none;
+}
+
+.item i.co {
+  position: absolute;
+  padding-left: 5px;
+  font-size: 25px;
+  left: 10px;
+  top: 10px;
+}
+
+.item i.co:hover {
+  cursor: pointer;
+}
+
+.fa-check-circle {
+  color: #85538a;
+}
+
+.item p.text {
+  position: absolute;
+  max-width: 285px;
+  margin: 0;
+  padding: 9px;
+  font-size: 15px;
+  left: 50px;
+  top: 5px;
+  background-color: #fafafa;
+  color: #393a4c;
+}
+
+.lineThrough {
+  text-decoration: line-through;
+  color: #ccc;
+}
+
+.item i.de {
+  position: absolute;
+  font-size: 21px;
+  right: 15px;
+  top: 10px;
+}
+
+.item i.de:hover {
+  color: #af0000;
+  cursor: pointer;
+}
+
+/* ------------ add item ------------ */
+.add-to-do {
+  position: relative;
+  width: 363px;
+  margin-bottom: 19px;
+  padding: 9px;
+  border-radius: 3px;
+  text-align: center;
+  background-color: white;
+}
+
+.add-to-do i {
+  position: relative;
+  font-size: 26px;
+  color: #85538a;
+}
+
+.add-to-do input {
+  position: relative;
+  width: 308px;
+  padding: 5px;
+  border: none;
+}
+
+.add-to-do input::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  padding: 5px;
+  color: #6a708a;
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 15px;
+}
+
+.add-to-do input::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #4162f6;
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 20px;
+}
+
+.add-to-do input:-ms-input-placeholder {
+  /* IE 10+ */
+  color: #4162f6;
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 20px;
+}
+
+.add-to-do input:-moz-placeholder {
+  /* Firefox 18- */
+  color: #4162f6;
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 20px;
+}
+/*# sourceMappingURL=light-mode.css.map */
