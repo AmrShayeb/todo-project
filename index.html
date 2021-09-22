@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" sizes="32x32"href="./images/favicon-32x32.png">
-    <link id="stylesheet" rel="stylesheet"href="../todo-app-main/css/light-mode.css">
+    <link rel="stylesheet" href="../todo-app-main/css/dark_mode_sass.scss">
     <link rel="stylesheet"href="https://fonts.googleapis.com/css?family=Titillium+Web">
     <link rel="stylesheet" href="../todo-app-main/css/font-awesome.css">
     <title>Frontend Mentor | Todo app</title>
@@ -14,31 +14,31 @@
   </head>
   <body>
     <div class="container-main">
-      <div class="image"></div>
-      <div class="container">
-        <div class="head">
+      <div class="container-main__image"></div>
+      <div class="container-main__container">
+        <div class="container__head">
           <button id="dark-mode-toggle" onclick="toggleTheme()"></button>
-          <h1 class="head-todo">TODO</h1>
+          <h1 class="container__head-todo">TODO</h1>
         </div>
         <!-- this is for input todo -->
-        <div class="add-to-do">
+        <div class="container__add-to-do">
           <i class="fa fa-check-circle co" job="complete" id="0"></i>
           <input type="text" id="input" placeholder="create new todo ...">
         </div>
         <!-- ----------------------------- -->
-        <div class="content">
+        <div class="container__content">
           <ul id="list">
-            <div class="putton-element">
-              <div class="num-items">4 items left</div>
-              <div class="all">All</div>
-              <div class="Active">Active</div>
-              <div class="completed">Completed</div>
-              <div class="clear">clear Completed</div>
+            <div class="list__putton-element">
+              <div class="list__num-items">4 items left</div>
+              <div class="list__all">All</div>
+              <div class="list__Active">Active</div>
+              <div class="list__completed">Completed</div>
+              <div class="list__clear">clear Completed</div>
             </div>
           </ul>
         </div>
-        <div class="drag">Drag and drop to reorder list</div>
-        <div class="attribution">
+        <div class="container-main__drag">Drag and drop to reorder list</div>
+        <div class="container-main__attribution">
           Challenge by <a href="https://www.frontendmentor.io?ref=challenge"
             target="_blank">Frontend Mentor</a>.
           Coded by <a href="#">Amr Shayeb</a>
@@ -49,9 +49,9 @@
     function toggleTheme() {
       var theme = document.getElementsByTagName('link')[1];
       if (theme.getAttribute('href').includes('light-mode.css')) {
-        theme.setAttribute('href', '../todo-app-main/css/dark-mode.css');
+        theme.setAttribute('href', '../todo-app-main/css/dark_mode_sass.scss');
       } else {
-        theme.setAttribute('href', '../todo-app-main/css/light-mode.css');
+        theme.setAttribute('href', '../todo-app-main/css/light_mood.scss');
       }
       }
       </script>

@@ -13,18 +13,18 @@ body{
     align-items: center;
     background-color: #161722;
 }
-.image {
+.container-main__image {
     position: fixed;
     width: 100%;
     top: 0px;
     height: 34%;
-    background-image: url(../images/bg-mobile-light.jpg);
+    background-image: url(../images/bg-mobile-dark.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 
 }
 
-.container {
+.container-main__container {
     position: relative;
     display: table;
     width: 223px;
@@ -33,7 +33,7 @@ body{
     text-align: center;
 }
 
-.head{
+.container__head{
     position: relative;
     width: 327px;
 }
@@ -49,14 +49,14 @@ body{
     background-color: unset;
 }
 
-.head-todo{
+.container__head-todo{
     color: #cedbdb;
     text-align: -webkit-left;
     letter-spacing: 16px;
     font-family: system-ui;
 }
 
-.add-to-do{
+.container__add-to-do{
     position: relative;
     width: 301px;
     margin-bottom: 19px;
@@ -67,14 +67,14 @@ body{
    
 }
 
-.add-to-do i {
+.container__add-to-do i {
     position: relative;
     font-size: 26px;
     color: #85538a;
     
 }
 
-.add-to-do input {
+.container__add-to-do input {
     position: relative;
     width: 264px;
     padding: 5px;
@@ -83,7 +83,7 @@ body{
     color: #cacde8;
 }
 
-.add-to-do input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+.container__add-to-do input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
     padding: 5px;
     color: #cacde8;
     font-family: 'Titillium Web', sans-serif;
@@ -91,19 +91,19 @@ body{
     
 }
 
-.add-to-do input::-moz-placeholder { /* Firefox 19+ */
+.container__add-to-do input::-moz-placeholder { /* Firefox 19+ */
     color: #4162f6;
     font-family: 'Titillium Web', sans-serif;
     font-size: 20px;
 }
 
-.add-to-do input:-ms-input-placeholder { /* IE 10+ */
+.container__add-to-do input:-ms-input-placeholder { /* IE 10+ */
     color: #4162f6;
     font-family: 'Titillium Web', sans-serif;
     font-size: 20px;
 }
 
-.add-to-do input:-moz-placeholder { /* Firefox 18- */
+.container__add-to-do input:-moz-placeholder { /* Firefox 18- */
     color: #4162f6;
     font-family: 'Titillium Web', sans-serif;
     font-size: 20px;
@@ -171,7 +171,7 @@ body{
     cursor: pointer;
 }
 
-.content{
+.container__content{
     width: 321px;
     max-height: 375px;
     background-color: 	#25273c;
@@ -179,12 +179,12 @@ body{
     border-radius: 3px;
 }
 
-.content ul{
+.container__content ul{
     margin:0;
     padding:0;
     
 }
- .putton-element{
+ .list__putton-element{
     position: relative;
     display: flex;
     padding: 11px 0px;
@@ -195,43 +195,43 @@ body{
     
 } 
 
-.num-items{
+.list__num-items{
 color: rgb(175, 175, 194);
 font-weight: bold;
 
 } 
 
-.all{
+.list__all{
 color: rgb(8, 8, 209);
 font-weight: bold;
 }
 
-.Active{
+.list__Active{
     color: rgb(175, 175, 194);
     font-weight: bold;
 }
 
-.Active:hover{
+.list__Active:hover{
     color: rgb(26, 24, 24);
     font-weight: bold;
 }
 
-.completed{
+.list__completed{
     color: rgb(175, 175, 194);
     font-weight: bold;
 }
 
-.clear{
+.list__clear{
     color: rgb(175, 175, 194);
     font-weight: bold;
 }
 
-.clear:hover{
+.list__clear:hover{
     color: rgb(90, 86, 86);
     font-weight: bold;
 }
 
-.drag{
+.container-main__drag{
     margin: 39px;
     padding: 12px;
     text-align: center;
@@ -239,18 +239,21 @@ font-weight: bold;
     font-size: 12px;
 }
 
-.attribution {
+.container-main__attribution {
     font-size: 11px;
     text-align: center;
 }
 
-.attribution a {
+.container-main__attribution a {
     color: hsl(228, 45%, 44%); 
 }
 
 
 @media only screen and (max-width: 1440px) {
 /* for disktop */
+.image {
+    background-image: url(../images/bg-desktop-dark.jpg);
+}
 
 .container {
     width: 300px;
