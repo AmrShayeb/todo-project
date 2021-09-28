@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" sizes="32x32"href="./images/favicon-32x32.png">
-    <link rel="stylesheet" href="../todo-app-main/css/dark_mode_sass.scss">
+    <link rel="stylesheet" href="../todo-app-main/css/dark_mode_sass.css">
     <link rel="stylesheet"href="https://fonts.googleapis.com/css?family=Titillium+Web">
     <link rel="stylesheet" href="../todo-app-main/css/font-awesome.css">
     <title>Frontend Mentor | Todo app</title>
@@ -49,9 +49,9 @@
     function toggleTheme() {
       var theme = document.getElementsByTagName('link')[1];
       if (theme.getAttribute('href').includes('light-mode.css')) {
-        theme.setAttribute('href', '../todo-app-main/css/dark_mode_sass.scss');
+        theme.setAttribute('href', '../todo-app-main/css/dark_mode_sass.css');
       } else {
-        theme.setAttribute('href', '../todo-app-main/css/light_mood.scss');
+        theme.setAttribute('href', '../todo-app-main/css/light_mood.css');
       }
       }
       </script>
