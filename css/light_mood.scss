@@ -12,14 +12,16 @@ body{
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    background-color: #161722;
+    background-color: #e4e5f1;
+    font-size: 16px;
 }
+
 .container-main__image {
     position: fixed;
     width: 100%;
     top: 0px;
     height: 34%;
-    background-image: url(../images/bg-mobile-dark.jpg);
+    background-image: url(../images/bg-mobile-light.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 
@@ -38,12 +40,13 @@ body{
     position: relative;
     width: 327px;
 }
+
 #dark-mode-toggle{
     width: 28px;
     height: 36px;
     margin: 7px;
     float: right;
-    background-image: url(../images/icon-sun.svg);
+    background-image: url(../images/icon-moon.svg);
     background-size: 27px;
     background-repeat: no-repeat;
     border: none;
@@ -51,7 +54,7 @@ body{
 }
 
 .container__head-todo{
-    color: #cedbdb;
+    color: #f1f2f2;
     text-align: -webkit-left;
     letter-spacing: 16px;
     font-family: system-ui;
@@ -64,22 +67,20 @@ body{
     padding: 9px;
     border-radius: 3px;
     text-align: center;
-    background-color: #25273c; 
-    i {
+    background-color: white;
+    i{
         position: relative;
         font-size: 26px;
-        color: #85538a;
+        color: #85538a;;
         input {
             position: relative;
             width: 264px;
             padding: 5px;
             border: none;
-            background-color:  	#25273c;
-            color: #cacde8;
             input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
                 padding: 5px;
-                color: #cacde8;
-                font-family:$base_font;
+                color: #6a708a;
+                font-family: $base_font;
                 font-size: 15px;
                 input::-moz-placeholder { /* Firefox 19+ */
                     color: $base_color;
@@ -103,15 +104,13 @@ body{
 
 .item{
     position: relative;
-    width:329px;
+    width: 329px;
     height: 45px;
     margin: 0;
     padding: 0;
     min-height: 45px;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(0,0,0,0.1);
     list-style: none;
-    
-   
 }
 
 .item i.co{
@@ -120,7 +119,6 @@ body{
     font-size: 25px;
     left:10px;
     top:10px;
-    color: #777a92;;
 }
 
 .item i.co:hover{
@@ -128,7 +126,7 @@ body{
 }
 
 .fa-check-circle{
-    color: #b563c0;
+    color: #85538a;
 }
 
 .item p.text{
@@ -136,26 +134,23 @@ body{
     max-width: 285px;
     margin: 0;
     padding: 9px;
-    color: #cacde8;
     font-size: 15px;
     left: 50px;
     top: 5px;
-    background-color:#25273c;
-   
+    background-color: #fafafa;
+    color: #393a4c;
 }
 
 .lineThrough{
     text-decoration: line-through;
-    color : #f1e4ee;
+    color : #ccc;
 }
-
 
 .item i.de{
     position: absolute;
     font-size: 21px;
     right:15px;
     top:10px;
-    color: #777a92;
 }
 
 .item i.de:hover{
@@ -166,7 +161,7 @@ body{
 .container__content{
     width: 321px;
     max-height: 375px;
-    background-color: 	#25273c;
+    background-color: #fafafa;
     overflow: auto;
     border-radius: 3px;
 }
@@ -174,23 +169,21 @@ body{
 .container__content ul{
     margin:0;
     padding:0;
-    
 }
- .list__putton-element{
+
+.list__putton-element{
     position: relative;
     display: flex;
     padding: 11px 0px;
     justify-content: space-around;
     border-top: 1px solid rgba(0,0,0,0.1);
     border-color: lightslategrey;
-    font-size: 14px;
-    
-} 
+    font-size: 12px;
+}
 
 .list__num-items{
 color: rgb(175, 175, 194);
 font-weight: bold;
-
 } 
 
 .list__all{
@@ -223,10 +216,10 @@ font-weight: bold;
     font-weight: bold;
 }
 
-.container-main__drag{
+.list__container-main__drag{
+    text-align: center;
     margin: 39px;
     padding: 12px;
-    text-align: center;
     color: #a09797;
     font-size: 12px;
 }
@@ -237,16 +230,14 @@ font-weight: bold;
 }
 
 .container-main__attribution a {
-    color: hsl(228, 45%, 44%); 
+    color: hsl(228, 45%, 44%);
 }
 
-
-@media only screen and (max-width: 1440px) {
+@media only screen and (min-width: 800px) {
 /* for disktop */
 .container-main__image {
-    background-image: url(../images/bg-desktop-dark.jpg);
+    background-image: url(../images/bg-desktop-light.jpg);
 }
-
 .container-main__container {
     width: 300px;
 }
